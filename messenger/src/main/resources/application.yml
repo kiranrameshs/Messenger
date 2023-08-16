@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: messenger-app
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.da6a2e6afaf7b4af
+            client-secret: 9eb67844b9f1b666495fff1a8f03c2aa66f05e74
+  data:
+    cassandra:
+      keyspace-name: main
+      username: CQboBuZyfQNcZPQgBzihWpDY
+      password: 8MS3e9MdCwHEXYXGaZt0jKYROJllxe3pbOYUZ4Wzt.uMllvBveslXYg_Me6Z+xNY7YBaFlJJr7npT6F2KlQe,1o0L1Fw2OYzZcspfX_0KUpqD,8P87C-tzpd9B,304lA
+      schema-action: recreate-drop-unused
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+astra.db:
+  id: 38679555-7a0c-4629-89f5-276d8283de16-1
+  region: us-east1
+  keyspace: main
+  application.token: AstraCS:CQboBuZyfQNcZPQgBzihWpDY:614de9d7bc89c1746d28661a1be59df7ef99e197bf08ee44b05c2f52a63ff802
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
